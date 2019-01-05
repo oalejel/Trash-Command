@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 FILENAME" >&2 # output usage error to stderr
+    exit 1
+fi
+
+mv "$1" ~/.Trash # move to system trash
